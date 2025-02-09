@@ -11,6 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors({
     origin: 'https://client-eight-rust.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
 }));
 
